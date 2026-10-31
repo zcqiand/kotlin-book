@@ -16,3 +16,4 @@
 | ch12 | `lab/ch12/ext-demo/` | String 业务扩展 + 静态解析演示 + 局限反例（私有访问/open 修饰编译失败回执 + shadow 告警实捕） |
 | ch13 | `lab/ch13/generics-delegate-demo/` | 泛型/型变/reified/委托四示例 + Java 泛型编不过现场（BrokenForward 雪崩）+ 擦除反例（PlainOfType erased type 回执） |
 | ch14 | `lab/ch14/operator-scope-demo/` | 运算符重载/infix/五作用域函数对照 + 双反例（INAPPLICABLE_OPERATOR_MODIFIER / INAPPLICABLE_INFIX_MODIFIER 编译失败回执 + 复绿） |
+| ch15 | `lab/ch15/library-model-demo/` | 卷二实战：图书管理领域建模（data class/sealed 状态机/扩展）+ JUnit 6.1.3 全绿 10 测试 + 先红后绿两轮回执（kotlin.test assertFailsWith） |
