@@ -9,6 +9,15 @@ kotlin 2.4.21 / jdk 21 / gradle 9.8.1 同口径）。本章无第三方依赖（
 > 1. 混编方向默认不通：Gradle 默认让 javac（compileJava）跑在 Kotlin 编译之前，
 >    Java→Kotlin 方向直接「找不到符号」。build.gradle.kts 里显式
 >    `compileJava` dependsOn `compileKotlin` 并把 Kotlin 产物挂进 javac classpath 后打通。
+>
+>    **【更正注 2026-11-01 · fact-checker 对照实验，原记录保留不删】** 上面这条的归因有误：
+>    Kotlin/JVM 插件自 1.1.60（KT-15620）起默认就让 compileJava 依赖 compileKotlin、
+>    并把 Kotlin 编译产物挂进 javac 的 classpath，Java→Kotlin 方向默认即通，无需手动挂接。
+>    对照实测：本工程原样副本去除下方 wiring 后干净构建（留档
+>    `lab/ch19/_work/interop-default-order-test/`），任务序仍为 compileKotlin→compileJava，
+>    JavaCaller.java（import demo.* 五个 Kotlin 类）直接编译通过，四演示输出与本回执
+>    逐字一致全绿，EXIT=0。下方显式 wiring 保留，定位为「插件默认行为的可读性冗余保险」。
+>
 > 2. 迁移类首跑炸出：Invoice 主构造带默认参数 `memo`，但默认参数**不生成重载链**，
 >    Java 侧 `new Invoice("老陈", 12900)` 两参调用点编译失败
 >    （`错误: 无法将类 Invoice中的构造器 Invoice应用到给定类型; 需要: String,int,String 找到: String,int`）。
