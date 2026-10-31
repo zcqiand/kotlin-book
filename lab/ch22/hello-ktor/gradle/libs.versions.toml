@@ -1,0 +1,18 @@
+# 版本目录：全工程版本唯一事实源。
+# Ktor 各模块版本由 ktor-bom 收口（见 build.gradle.kts 的 platform 引入），
+# 这里给每个 Ktor 模块写 version.ref 只是为了目录自身合法，实际约束以 BOM 为准。
+[versions]
+kotlin = "2.4.21"
+ktor = "3.6.0"
+kotlinxSerialization = "1.9.0"
+
+[libraries]
+ktor-bom = { module = "io.ktor:ktor-bom", version.ref = "ktor" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+ktor-server-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
