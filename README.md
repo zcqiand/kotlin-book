@@ -18,3 +18,4 @@
 | ch14 | `lab/ch14/operator-scope-demo/` | 运算符重载/infix/五作用域函数对照 + 双反例（INAPPLICABLE_OPERATOR_MODIFIER / INAPPLICABLE_INFIX_MODIFIER 编译失败回执 + 复绿） |
 | ch15 | `lab/ch15/library-model-demo/` | 卷二实战：图书管理领域建模（data class/sealed 状态机/扩展）+ JUnit 6.1.3 全绿 10 测试 + 先红后绿两轮回执（kotlin.test assertFailsWith） |
 | ch16 | `lab/ch16/suspend-demo/` | 卷三分水岭：suspend 首例+线程释放时间线（见证协程 +216ms）+单线程十万协程数量级+P05 三步判定法演练+ILLEGAL_SUSPEND_FUNCTION_CALL 编译失败回执复绿（kotlinx-coroutines 1.11.0，Ktor bom 依赖树实测） |
+| ch17 | `lab/ch17/structured-concurrency-demo/` | 卷三：结构化并发不泄漏五演示（泄漏对照/父子作用域取消联动/P06 launch-async 选型/取消传播链/异常边界）+runBlocking 单线程自锁桥翻现场修复回执（五演示全绿 EXIT=0） |
