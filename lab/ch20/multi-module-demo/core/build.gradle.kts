@@ -1,0 +1,28 @@
+// :core 的构建规则——复绿态: java-library + api。
+// 初始态是 kotlin("jvm") + implementation, slf4j-api 对下游不可见,
+// :app 直引编译失败; 换成 java-library 后才能用 api 声明「随库对外发布」的依赖,
+// 两态对照是本章 api/implementation 收敛演示的实物（编译回执见 receipts.md）。
+plugins {
+    // 插件版本同样走版本目录: alias 展开为 kotlin-jvm 目录条目, 字面量不出现在本文件,
+    // 多模块工程里每个模块的插件版本不再各写一份, 天然同源。
+    alias(libs.plugins.kotlin.jvm)
+
+    // java-library 提供 api 配置: implementation 只保证「自己编译时可见」,
+    // api 额外把依赖带进下游的编译 classpath——适合「类型出现在公开签名里」的依赖。
+    // Kotlin DSL 里带连字符的插件 id 得写字符串形式, 裸写会被当成减法表达式。
+    id("java-library")
+}
+
+kotlin {
+    // 工具链沿 ch2 口径: 本模块的编译运行钉在 JDK 21, 不随执行机的默认 JDK 漂移
+    jvmToolchain(21)
+}
+
+dependencies {
+    // api: slf4j-api 的 Logger 会出现在下游需要的类型面上, 收敛为随库发布
+    api(libs.slf4j.api)
+
+    // implementation: 协程只在 :core 内部承载演示耗时操作, :app 无需感知,
+    // 留在 implementation 不传染下游
+    implementation(libs.kotlinx.coroutines.core)
+}

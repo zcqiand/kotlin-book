@@ -1,0 +1,10 @@
+# gradle
+.gradle/
+build/
+
+# ide
+.idea/
+*.iml
+out/
+
+# 本工程无本地特殊件; wrapper jar 与 properties 属正式件入库
