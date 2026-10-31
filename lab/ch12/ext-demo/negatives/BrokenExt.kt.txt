@@ -1,0 +1,13 @@
+package demo
+
+// 清单12-5 反例：扩展的两条红线，必须编译失败，运行不到
+// 红线一：扩展只能访问公开成员——读私有属性直接被编译器拦下
+fun SecretBox.revealCode(): String = this.code
+
+class SecretBox {
+    private val code = "A-77"
+    fun open(): String = "已开启"
+}
+
+// 红线二：扩展不在类里、不参与继承——open/override 修饰直接报错，扩展无多态可言
+open fun String.shout(): String = uppercase()
