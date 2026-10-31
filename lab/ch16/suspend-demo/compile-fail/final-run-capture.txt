@@ -1,0 +1,54 @@
+EXIT=0
+=====STDOUT=====
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+
+> Task :run
+========== 演示 1: blockedDemo（阻塞拖死线程池 vs 挂起让路） ==========
+[blocked][+13ms][pool-1-thread-1] 占坑任务 0 开始 Thread.sleep(5000)
+[blocked][+13ms][pool-1-thread-3] 占坑任务 2 开始 Thread.sleep(5000)
+[blocked][+13ms][pool-1-thread-2] 占坑任务 1 开始 Thread.sleep(5000)
+[blocked][+5040ms][pool-1-thread-3] 占坑任务 2 结束
+[blocked][+5040ms][pool-1-thread-1] 占坑任务 0 结束
+[blocked][+5040ms][pool-1-thread-2] 占坑任务 1 结束
+[blocked][+5042ms][pool-1-thread-3] 瞬时任务终于开跑，从提交到执行实际等了 4933ms
+[co][+46ms][DefaultDispatcher-worker-1] 占坑协程 0 开始 delay(5000)
+[co][+46ms][DefaultDispatcher-worker-2] 占坑协程 1 开始 delay(5000)
+[co][+47ms][DefaultDispatcher-worker-3] 占坑协程 2 开始 delay(5000)
+[co][+155ms][DefaultDispatcher-worker-3] 瞬时协程开跑，从提交到执行实际等了 1ms
+[co][+5053ms][DefaultDispatcher-worker-3] 占坑协程 1 结束
+[co][+5053ms][DefaultDispatcher-worker-1] 占坑协程 0 结束
+[co][+5053ms][DefaultDispatcher-worker-2] 占坑协程 2 结束
+
+========== 演示 2: firstSuspendDemo（首个 suspend 函数 + 线程释放观察） ==========
+[first-suspend][+0ms][main] 进入 runBlocking，即将调用 slowFetch()
+[first-suspend][+216ms][main] 池子里的线程在干别的活（第二个协程插队执行）
+[first-suspend][+1011ms][main] slowFetch() 返回：模拟网络数据（对比进入/返回两条日志的线程名）
+
+========== 演示 3: manyCoroutinesDemo（单线程 10 万协程） ==========
+[many][+5ms][ch16-single] 第 0 号协程开始 delay(1000)
+[many][+212ms][main] 100000 个协程 launch 完成，launch 阶段耗时 204ms（此刻该单线程上挂起的活跃协程数量级：10 万，线程数仍是 1）
+[many][+1357ms][main] 100000 个协程全部 join 完毕，总耗时 1357ms
+
+========== 演示 4: p05DrillDemo（P05 判据演练：正例/反例） ==========
+[p05-ok][+13ms][p05-ok-single] watcher tick @ 1ms
+[p05-ok][+13ms][p05-ok-single] 被测等待开始（p05-ok）
+[p05-ok][+215ms][p05-ok-single] watcher tick @ 212ms
+[p05-ok][+416ms][p05-ok-single] watcher tick @ 413ms
+[p05-ok][+619ms][p05-ok-single] watcher tick @ 616ms
+[p05-ok][+823ms][p05-ok-single] watcher tick @ 820ms
+[p05-ok][+1026ms][p05-ok-single] 被测等待返回
+[p05-ok][+1027ms][main] watcher 最大 tick 间隔 = 211ms（tick 名义周期 200ms；含等待返回边界测点）
+
+[p05-bad][+2ms][p05-bad-single] watcher tick @ 1ms
+[p05-bad][+2ms][p05-bad-single] 被测等待开始（p05-bad）
+[p05-bad][+1013ms][p05-bad-single] 被测等待返回
+[p05-bad][+1013ms][main] watcher 最大 tick 间隔 = 1011ms（tick 名义周期 200ms；含等待返回边界测点）
+
+BUILD SUCCESSFUL in 21s
+2 actionable tasks: 1 executed, 1 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.8.1/userguide/configuration_cache_enabling.html
+=====STDERR=====

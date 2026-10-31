@@ -17,3 +17,4 @@
 | ch13 | `lab/ch13/generics-delegate-demo/` | 泛型/型变/reified/委托四示例 + Java 泛型编不过现场（BrokenForward 雪崩）+ 擦除反例（PlainOfType erased type 回执） |
 | ch14 | `lab/ch14/operator-scope-demo/` | 运算符重载/infix/五作用域函数对照 + 双反例（INAPPLICABLE_OPERATOR_MODIFIER / INAPPLICABLE_INFIX_MODIFIER 编译失败回执 + 复绿） |
 | ch15 | `lab/ch15/library-model-demo/` | 卷二实战：图书管理领域建模（data class/sealed 状态机/扩展）+ JUnit 6.1.3 全绿 10 测试 + 先红后绿两轮回执（kotlin.test assertFailsWith） |
+| ch16 | `lab/ch16/suspend-demo/` | 卷三分水岭：suspend 首例+线程释放时间线（见证协程 +216ms）+单线程十万协程数量级+P05 三步判定法演练+ILLEGAL_SUSPEND_FUNCTION_CALL 编译失败回执复绿（kotlinx-coroutines 1.11.0，Ktor bom 依赖树实测） |
