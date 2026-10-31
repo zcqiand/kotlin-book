@@ -22,3 +22,4 @@
 | ch18 | `lab/ch18/flow-demo/` | 卷三：Flow 响应式数据流六演示（冷热对照 P07/StateFlow 状态承载 P08 前半/SharedFlow 事件广播 P08 后半/操作符族 debounce 静默窗/三问定流）+裸 launch DEPRECATION_ERROR 升级实录改 CoroutineScope 扩展函数（两跑 EXIT=0，kotlinx-coroutines 1.11.0） |
 | ch19 | `lab/ch19/java-interop-demo/` | 卷三：Java/Kotlin 混编互操作（双向互调 getter-setter 属性映射/平台类型 String! 三处置 P09/@JvmStatic-@JvmOverloads-@JvmField 逐注解/增量迁移全流程）+混编构建次序实测（Java 编译依赖 Kotlin 产物）+@JvmField+private INAPPLICABLE_JVM_FIELD 反例回执复绿（EXIT=0） |
 | ch20 | `lab/ch20/multi-module-demo/` | 卷三：Gradle 多模块工程化（libs.versions.toml 收纳/api-implementation 可见性收敛/settings 拆分 :core+:app/验收搜索七落点）+反例 A UNRESOLVED_IMPORT 与反例 B INVISIBLE_REFERENCE 逐字回执复绿+12 条工程断言全实测出处（EXIT=0） |
+| ch21 | `lab/ch21/quality-gate-demo/` | 卷三收官：JUnit 6 参数化测试+断言风格演练+ktfmt/detekt 双静态关+四级门控流水线（gradle check 串联）；六级逐字回执（测试绿/断言红复绿/ktfmt 红复绿/detekt 红复绿/check/build）；ktfmt 0.27.0=插件坐标（引擎另版）申报节 |

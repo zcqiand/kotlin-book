@@ -1,0 +1,11 @@
+# gradle
+.gradle/
+build/
+
+# ide
+.idea/
+*.iml
+out/
+
+# 章级临时区（回执原始日志存这里，不入库）
+_work/
