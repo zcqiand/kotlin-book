@@ -19,3 +19,5 @@
 | ch15 | `lab/ch15/library-model-demo/` | 卷二实战：图书管理领域建模（data class/sealed 状态机/扩展）+ JUnit 6.1.3 全绿 10 测试 + 先红后绿两轮回执（kotlin.test assertFailsWith） |
 | ch16 | `lab/ch16/suspend-demo/` | 卷三分水岭：suspend 首例+线程释放时间线（见证协程 +216ms）+单线程十万协程数量级+P05 三步判定法演练+ILLEGAL_SUSPEND_FUNCTION_CALL 编译失败回执复绿（kotlinx-coroutines 1.11.0，Ktor bom 依赖树实测） |
 | ch17 | `lab/ch17/structured-concurrency-demo/` | 卷三：结构化并发不泄漏五演示（泄漏对照/父子作用域取消联动/P06 launch-async 选型/取消传播链/异常边界）+runBlocking 单线程自锁桥翻现场修复回执（五演示全绿 EXIT=0） |
+| ch18 | `lab/ch18/flow-demo/` | 卷三：Flow 响应式数据流六演示（冷热对照 P07/StateFlow 状态承载 P08 前半/SharedFlow 事件广播 P08 后半/操作符族 debounce 静默窗/三问定流）+裸 launch DEPRECATION_ERROR 升级实录改 CoroutineScope 扩展函数（两跑 EXIT=0，kotlinx-coroutines 1.11.0） |
+| ch19 | `lab/ch19/java-interop-demo/` | 卷三：Java/Kotlin 混编互操作（双向互调 getter-setter 属性映射/平台类型 String! 三处置 P09/@JvmStatic-@JvmOverloads-@JvmField 逐注解/增量迁移全流程）+混编构建次序实测（Java 编译依赖 Kotlin 产物）+@JvmField+private INAPPLICABLE_JVM_FIELD 反例回执复绿（EXIT=0） |
