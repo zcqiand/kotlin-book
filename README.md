@@ -14,3 +14,4 @@
 |----|------|------|
 | ch11 | `lab/ch11/trio-demo/` | data class / sealed class 状态机 / object 三件套演示 + when 漏分支编译失败回执 |
 | ch12 | `lab/ch12/ext-demo/` | String 业务扩展 + 静态解析演示 + 局限反例（私有访问/open 修饰编译失败回执 + shadow 告警实捕） |
+| ch13 | `lab/ch13/generics-delegate-demo/` | 泛型/型变/reified/委托四示例 + Java 泛型编不过现场（BrokenForward 雪崩）+ 擦除反例（PlainOfType erased type 回执） |

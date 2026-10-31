@@ -1,0 +1,7 @@
+package demo
+
+// 清单13-1 反例：从 Java 搬来的转发逻辑，通配符原样照抄
+// Kotlin 根本没有 <? extends / <? super 通配符语法，必须编译失败
+fun forward(src: MutableList<? extends Message>, dst: MutableList<? super TextMessage>) {
+    for (item in src) dst.add(item)
+}
