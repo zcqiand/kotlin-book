@@ -1,0 +1,26 @@
+[
+  {
+    "code": "STRC",
+    "official_no": "GB 50204-2015",
+    "name": "混凝土结构",
+    "is_official": true,
+    "enabled": true,
+    "sort_order": 1
+  },
+  {
+    "code": "STEL",
+    "official_no": "GB 50205-2020",
+    "name": "钢结构",
+    "is_official": true,
+    "enabled": true,
+    "sort_order": 2
+  },
+  {
+    "code": "WPRF",
+    "official_no": "GB 50208-2011",
+    "name": "建筑防水",
+    "is_official": false,
+    "enabled": true,
+    "sort_order": 3
+  }
+]
