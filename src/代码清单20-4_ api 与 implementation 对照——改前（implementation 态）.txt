@@ -1,0 +1,9 @@
+// 改前: kotlin("jvm") 插件 + implementation, slf4j-api 只进 :core 自己的编译 classpath
+plugins {
+    alias(libs.plugins.kotlin.jvm)   // 没有 java-library, 下面想写 api 也没有这个配置
+}
+
+dependencies {
+    implementation(libs.slf4j.api)               // 对下游不可见: :app 直引编译失败（清单 20-6）
+    implementation(libs.kotlinx.coroutines.core) // 协程留在内部, 这个选择是对的
+}

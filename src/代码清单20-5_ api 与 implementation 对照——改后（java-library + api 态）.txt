@@ -1,0 +1,12 @@
+// 改后: 引入 java-library 插件解锁 api 配置, slf4j-api 提为随库发布
+plugins {
+    alias(libs.plugins.kotlin.jvm)
+    id("java-library")
+}
+
+dependencies {
+    api(libs.slf4j.api)                          // 随库对外: :app 同代码复绿（清单 20-7）
+    implementation(libs.kotlinx.coroutines.core) // 内部细节仍收在 implementation
+}
+// 选型口诀在实测里的落点: 依赖的类型出现在你的公开 API 签名/下游要用它的类型时,
+// 才升 api; 纯内部实现一律 implementation, 把实现细节锁在自己的边界里。

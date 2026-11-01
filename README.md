@@ -1,37 +1,43 @@
-# kotlin-book — xr-know-020《Kotlin 从入门到项目实践》随书代码仓
+# Kotlin 从入门到项目实践 - 代码清单
 
-独立 git 仓（xr-knowledge-suite 主仓 .gitignore 零跟踪）。版本口径：Kotlin 2.4.x / JDK 21 / Gradle 9.8.1（见主仓 `output/xr-know-020/version-lock.json`）。
+## 关于本书
 
-## lab 约定
+本书是一本基于 Kotlin 2.4.x（K2 编译器）+ JDK 21 的系统性 Kotlin 教程，全书四卷 35 章，从语言心智模型讲起，覆盖协程与结构化并发、Flow、Gradle 多模块工程化与 Ktor 服务端开发，最终落到两个企业级项目实战。面向零基础或仅有少量编程经验（如一点 Java 基础）的初学者，以及想从 Java 迁移到 Kotlin 的后端开发者。每个技术选型都附带适用场景与选择理由，每章交付一个可操作的成果。
 
-- 章级验证工程一律放 `lab/chNN/<工程名>/`；一章可含多工程，各工程独立可运行、自带 `.gitignore` 排除构建产物（`build/`、`.gradle/`）。
-- 工程内 `receipts.md` 保存实测回执（正例 exit 0 / 反例编译失败 exit 1 逐字），与章正文代码清单对码。
-- 验证跑法：系统 Gradle 9.8.1 直跑（不用 wrapper），`JAVA_TOOL_OPTIONS=-Dstdout.encoding=UTF-8` 保中文回执不乱码。
+## 本书特点
 
-## 已登记
+- 基于当前稳定版 Kotlin 2.4.x（K2 编译器）与 JDK 21，示例代码全部从真实案例仓转写、可运行，无版本错位。
+- 决策框架驱动：空安全调用方式、作用域函数五选一、Flow 三种流选型等关键选型均给出决策框架，不只教怎么写，还教什么时候写、为什么这样写。
+- 以第 4 章空安全与第 16-17 章协程/结构化并发两道分水岭组织全书重点，帮助读者从「会写语法」进入「工程思维做事」。
+- 零基础与 Java 迁移双入口：从环境搭建讲起，不假设读者写过 Kotlin；有 Java 背景的读者可走第 19 章 Java 互操作专路与第 26 章 Spring Boot 4 桥接。
 
-| 章 | 工程 | 内容 |
-|----|------|------|
-| ch08 | `lab/ch08/todo-cli/` | 卷一实战：命令行待办工具（工程骨架/变量与类型/空安全/when/函数与集合操作）+运行回执 22 件逐字（正例 exit 0/反例编译失败）+compare_receipts.py 对账脚本 |
-| ch10 | `lab/ch10/open-philosophy/` | open 修饰符与继承哲学演示（默认 final vs open 对照+broken/ 反例现场+run_gradle.py 验证跑法+回执逐字） |
-| ch11 | `lab/ch11/trio-demo/` | data class / sealed class 状态机 / object 三件套演示 + when 漏分支编译失败回执 |
-| ch12 | `lab/ch12/ext-demo/` | String 业务扩展 + 静态解析演示 + 局限反例（私有访问/open 修饰编译失败回执 + shadow 告警实捕） |
-| ch13 | `lab/ch13/generics-delegate-demo/` | 泛型/型变/reified/委托四示例 + Java 泛型编不过现场（BrokenForward 雪崩）+ 擦除反例（PlainOfType erased type 回执） |
-| ch14 | `lab/ch14/operator-scope-demo/` | 运算符重载/infix/五作用域函数对照 + 双反例（INAPPLICABLE_OPERATOR_MODIFIER / INAPPLICABLE_INFIX_MODIFIER 编译失败回执 + 复绿） |
-| ch15 | `lab/ch15/library-model-demo/` | 卷二实战：图书管理领域建模（data class/sealed 状态机/扩展）+ JUnit 6.1.3 全绿 10 测试 + 先红后绿两轮回执（kotlin.test assertFailsWith） |
-| ch16 | `lab/ch16/suspend-demo/` | 卷三分水岭：suspend 首例+线程释放时间线（见证协程 +216ms）+单线程十万协程数量级+P05 三步判定法演练+ILLEGAL_SUSPEND_FUNCTION_CALL 编译失败回执复绿（kotlinx-coroutines 1.11.0，Ktor bom 依赖树实测） |
-| ch17 | `lab/ch17/structured-concurrency-demo/` | 卷三：结构化并发不泄漏五演示（泄漏对照/父子作用域取消联动/P06 launch-async 选型/取消传播链/异常边界）+runBlocking 单线程自锁桥翻现场修复回执（五演示全绿 EXIT=0） |
-| ch18 | `lab/ch18/flow-demo/` | 卷三：Flow 响应式数据流六演示（冷热对照 P07/StateFlow 状态承载 P08 前半/SharedFlow 事件广播 P08 后半/操作符族 debounce 静默窗/三问定流）+裸 launch DEPRECATION_ERROR 升级实录改 CoroutineScope 扩展函数（两跑 EXIT=0，kotlinx-coroutines 1.11.0） |
-| ch19 | `lab/ch19/java-interop-demo/` | 卷三：Java/Kotlin 混编互操作（双向互调 getter-setter 属性映射/平台类型 String! 三处置 P09/@JvmStatic-@JvmOverloads-@JvmField 逐注解/增量迁移全流程）+混编构建次序实测（Java 编译依赖 Kotlin 产物）+@JvmField+private INAPPLICABLE_JVM_FIELD 反例回执复绿（EXIT=0） |
-| ch20 | `lab/ch20/multi-module-demo/` | 卷三：Gradle 多模块工程化（libs.versions.toml 收纳/api-implementation 可见性收敛/settings 拆分 :core+:app/验收搜索七落点）+反例 A UNRESOLVED_IMPORT 与反例 B INVISIBLE_REFERENCE 逐字回执复绿+12 条工程断言全实测出处（EXIT=0） |
-| ch21 | `lab/ch21/quality-gate-demo/` | 卷三收官：JUnit 6 参数化测试+断言风格演练+ktfmt/detekt 双静态关+四级门控流水线（gradle check 串联）；六级逐字回执（测试绿/断言红复绿/ktfmt 红复绿/detekt 红复绿/check/build）；ktfmt 0.27.0=插件坐标（引擎另版）申报节 |
-| ch22 | `lab/ch22/hello-ktor/` | 卷三服务端段开章：Ktor 3.6.0 第一个 HTTP 服务（EngineMain+application.conf 六端点/路由/ContentNegotiation+serialization）；本书 lab 首个 version catalog（gradle/libs.versions.toml version.ref+BOM platform 双收口）；热重载同 PID 回执+embeddedServer 8091 对照三发+反例 Task 'run' not found 复绿+curl 六发逐字回执 |
-| ch23 | `lab/ch23/exposed-crud/` | 数据访问章：Exposed 1.5.1（exposed-bom 收口）+本机 PG 127.0.0.1:54321（BooksTable schema/CUD 全链+transaction 有无双向实证 rec3-tx vs rec-no-tx）；SQL 拼接注入反例三发（SqlConcatDemo 发1/2/3）→参数化复绿；junit-bom 6.1.3 BooksCrudTest tests=3 对账回执；本书 lab 第二个 version catalog（r2dbc-postgresql 1.1.3.RELEASE BOM 外钉 exact）；练习 stock 列迁移回执 |
-| ch24 | `lab/ch24/jwt-auth-demo/` | 认证章：jjwt 0.12.6 自签 HS256 双令牌（access/refresh，DEMO 教学密钥警示注释在码）+Ktor 3.6.0 jwt 插件认证流水线/StatusPages 统一错误面/分因结构化日志，端口 8081；两套实现同密钥跨库互认实测（Ktor auth-jwt 传递引入 com.auth0:java-jwt 4.6.0 依赖树为证）；反例裸奔三发 200 留档→字节级复绿 sha1 c00d81df→401 回执；本书 lab 第三个 version catalog 六条（ktor-server-auth/auth-jwt/status-pages 3.6.0 BOM 收口+jjwt api/impl/jackson 0.12.6）+slf4j 2.0.16 沿 ch23；补拍件 TokenDemo.kt（runTokenDemo 任务）/TokenService.verifyStrict() 留档 |
-| ch25 | `lab/ch25/task-api/` | 卷三收官实战章：三线合流完整 REST API（路由→服务→仓储三层+Exposed 1.5.1 持久化+双令牌门禁+StatusPages+AUTH/OPS 分因日志），端口 8082/隔离库 taskapi_ch25_verify；编号发①-⑧逐发回执（含无令牌 401 实测）+11 测试全绿（JUnit tests=6+5）+四级门控 exit 0 BUILD SUCCESSFUL；本书 lab 第五个 version catalog 零自填；K064 TaskRepository 接口×ExposedTaskRepository 实现首兑现（def=29 前置） |
-| ch29 | `lab/ch29/repo-migrate-demo/` | 卷四实战：数据迁移与仓储层（Exposed 1.5.1+本机 PG 127.0.0.1:54321 隔离库 kotlin_book_ch29_verify，init-db 子命令自建）；V001/V002 版本化迁移+种子 JSON 灌入（SeedLoader）+Migrator 版本表+SpecialtyRepository（K064 接口兑现，def=29）；六实测件回执全绿（init-db/migrate×2 幂等跳过/seed×2 upsert 幂等/all 一条龙冒烟，逐条存 `_work/rec-*.log` 含 exit code 首行）；EntityTables.kt 头注释 45→46 列勘误随链（正文清单 29-2 对账基准） |
-| ch30 | `lab/ch30/flow-engine-demo/` | 卷四实战：密封类状态机流程引擎（FlowStates 八值契约+FlowEngine dispatch 穷举+Rbac 权限闸 Role/ForbiddenException/requirePermission+Main 三段回执：A 主链八站/B 非法跃迁拦截/C 越权拦截，K024/K014 兑现+K069 first=30 最小面承载）；JUnit tests=5 全绿（五看守面）；零第三方依赖（纯标准库+kotlin-test，本书 lab 第六个 version catalog 仅 Kotlin 2.4.21）；零数据库零 PG 触碰（回执逐字存 `_work/rec-*.log`） |
-| ch31 | `lab/ch31/gate-ci-deploy-verify/` | 卷四/项目一收官：四级门控+CI+容器化部署全链验证（ktfmt 0.27.0/detekt 1.23.8/JUnit 6.1.3/Kotlin 2.4.21 对码案例仓 v0.2.1-20261025 只读零修改，版本六项零偏差）；四门首跑红自愈实录（ktfmt 2 文件→Format 复绿/detekt 解构超限→直取属性复绿/测试「李工」2 字符→4 字符复绿/build exit 0 jar+dist）；门控一条龙+testsuite XML 读数+便携 PG 16.15 @15439（`_ch31_verify` 隔离，JDBC 42.7.4 冒烟+initdb-verify+psql 失败留痕）14 件回执逐字存 `_work/rec-*.log`；CI 教学件（gate+deploy 双 job）+compose 教学件（本机无 Docker 走 zonky 等效路线，与案例仓口径差异八项全显式列表） |
-| ch32 | `lab/ch32/identity-skeleton/` | 卷四/项目二开卷：多租户身份平台工程骨架（与案例仓 saas-identity-platform-kotlin v0.2.1-20261025 只读对码——entity/shared.models/impl 三包七文件逐列逐字段对码+版本坐标四项一致：Kotlin 2.4.21/exposed-bom 1.5.1/junit-bom 6.1.3/jvmToolchain 21）；ModelInvariantTest 11 用例（首跑红留痕→复绿）+compile/build/clean-build 一条龙 exit 0 六件回执逐字存 `_work/rec-*.log`；**零数据库零端口**（Exposed 只取编译面，本机/共享 PG 双零触碰，方法体内存桩教学级简化） |
-| ch33 | `lab/ch33/tenant-isolation-lab/` | 卷四/项目二实战：租户生命周期+行级隔离全链实测（本机 PG 127.0.0.1:54321 验证库 `kotlin_book_ch33_verify` 自建，ch29 同口径 embedded 复用零新建容器；案例仓 saas v0.2.1 七绑定文件逐件对码：entity 列定义逐列复刻/SwitchTenantResponse 字段+validate 语义复刻/生命周期三 op 同写法补齐/meSwitchTenant 语义复刻，两测试类 Ktor HTTP 裁剪为服务层直调）；实测四件=生命周期 0→1→2→停 1→删 2+1、换租户 A/B 各 2 行零越界、跨租户读 0 改 0 对照组 1、回归 tests=6 全绿（rec-02 首跑红种子夹具留痕）；版本坐标五项一致（Kotlin 2.4.21/exposed-bom 1.5.1/r2dbc-postgresql 1.1.3.RELEASE/junit-bom 6.1.3/toolchain 21）；回执 receipts.md 落工程根+rec-01~06 逐字存 `_work/` |
-| ch34 | `lab/ch34/identity-auth-rbac-lab/` | 卷四/项目二实战：认证+SSO+RBAC 菜单授权全链实测（本机 PG 127.0.0.1:54321 验证库 `kotlin_book_ch34_verify` 自建每轮清库，LabPg ch33 镜像；jjwt 0.12.6 双令牌 version catalog 唯一事实源——api=implementation+impl/jackson=runtimeOnly；案例仓 saas v0.2.1-20261025 五绑定文件对码：JwtIssuer 逐行复刻 ≥32B require/TokenPair 双令牌落库 TTL 300s/7天/OauthApi rotate 撤旧签新+一次性 code 防重放/MeApi 四级 inList 矩阵装配/Security 401+403 双通道，服务层直调零 HTTP）；实测件四类 12 用例全绿（AuthFlow 5/SsoCode 2/RbacMatrix 2/AuthzBoundary 3）+build/clean-build 复绿 exit 0（Gradle 9.8.1/JVM 21.0.6）；边界读数=无令牌 401/坏签名 401/过期 401/缺权限 403 permission denied: member:write/对照组 member:read 放行/无令牌+缺权限先 401/同码二换 400 INVALID_GRANT/旧 rt 再用 400 revoked/密钥 31B 拒 32B 过；回执 receipts.md 落工程根+rec-01~08 存 `_work/`（十件含复跑留痕） |
+## 案例仓库
+
+| 仓库名                            | 说明                                                             |
+| :-------------------------------- | :--------------------------------------------------------------- |
+| lab-management-system-kotlin      | 实验室管理系统（Ktor + Exposed + PostgreSQL），对应第 28~31 章     |
+| saas-identity-platform-kotlin     | SaaS 多租户身份平台（Ktor + JWT + 租户隔离），对应第 32~35 章      |
+
+> 两个案例仓均为 clone 后按各自 README 启动即可跑通的完整工程，包含完整测试与质量门控（ktfmt / detekt / 编译 / 测试），无第三方 API Key 依赖。
+
+## 代码清单说明
+
+本书所有代码清单均收录于本目录，对应书稿中「代码清单 N-M」标题块。
+
+### 运行环境
+
+```bash
+- JDK：21
+- IDE：IntelliJ IDEA（社区版即可）
+- 构建工具：Gradle 9.8.1（Kotlin DSL）
+- 语言与核心依赖：Kotlin 2.4.21、Ktor 3.6.0（ktor-bom 收口）、Exposed 1.5.1（exposed-bom 收口）、kotlinx-coroutines 1.11.0、kotlinx-serialization 1.9.0、JUnit 6.1.3
+- 数据库：PostgreSQL（数据访问层经 R2DBC 驱动连接）
+```
+
+### 目录结构
+
+```
+src/
+├── 代码清单1-* … 代码清单34-*   # 第 1-34 章，共 144 个清单文件（命名「代码清单N-M_ 描述.扩展名」）
+└── extracted_code_manifest.json   # 全部清单索引（title/lang/chapter_file/line/extracted_file/source）
+```

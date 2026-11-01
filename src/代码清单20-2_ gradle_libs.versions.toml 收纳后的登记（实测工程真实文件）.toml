@@ -1,0 +1,17 @@
+# 版本目录（version catalog）: 全工程依赖与插件版本的唯一登记处。
+# 任何模块的 build.gradle.kts 只允许经 libs.* 引用，禁止裸写版本号——
+# 版本只在这一个文件出现一次，升级改一行，全部模块同时生效。
+# 口径来源: 主仓 output/xr-know-020/version-lock.json（kotlin 2.4.21 / slf4j 2.0.16 / kotlinx-coroutines 1.11.0）
+
+[versions]
+kotlin = "2.4.21"
+slf4j = "2.0.16"
+kotlinxCoroutines = "1.11.0"
+
+[libraries]
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

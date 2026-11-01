@@ -1,0 +1,1154 @@
+[
+  {
+    "title": "代码清单1-1 一个两代编译器都能跑的极简程序",
+    "lang": "kotlin",
+    "chapter_file": "chapter-001.md",
+    "line": 65,
+    "extracted_file": "src\\代码清单1-1 一个两代编译器都能跑的极简程序.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单1-2 HelloKotlin.kt——第一个完整的 Kotlin 程序",
+    "lang": "kotlin",
+    "chapter_file": "chapter-001.md",
+    "line": 116,
+    "extracted_file": "src\\代码清单1-2 HelloKotlin.kt——第一个完整的 Kotlin 程序.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单2-1: 验证 JDK 21 是否就绪",
+    "lang": "bash",
+    "chapter_file": "chapter-002.md",
+    "line": 30,
+    "extracted_file": "src\\代码清单2-1_ 验证 JDK 21 是否就绪.sh",
+    "source": null
+  },
+  {
+    "title": "代码清单2-2: 从零创建工程骨架目录",
+    "lang": "bash",
+    "chapter_file": "chapter-002.md",
+    "line": 93,
+    "extracted_file": "src\\代码清单2-2_ 从零创建工程骨架目录.sh",
+    "source": null
+  },
+  {
+    "title": "代码清单2-3: settings.gradle.kts 工程登记处",
+    "lang": "kotlin",
+    "chapter_file": "chapter-002.md",
+    "line": 103,
+    "extracted_file": "src\\代码清单2-3_ settings.gradle.kts 工程登记处.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单2-4: build.gradle.kts 构建规则全貌",
+    "lang": "kotlin",
+    "chapter_file": "chapter-002.md",
+    "line": 112,
+    "extracted_file": "src\\代码清单2-4_ build.gradle.kts 构建规则全貌.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单2-5: App.kt 工程的第一份源码",
+    "lang": "kotlin",
+    "chapter_file": "chapter-002.md",
+    "line": 157,
+    "extracted_file": "src\\代码清单2-5_ App.kt 工程的第一份源码.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单2-6: 生成包装器并运行工程",
+    "lang": "bash",
+    "chapter_file": "chapter-002.md",
+    "line": 177,
+    "extracted_file": "src\\代码清单2-6_ 生成包装器并运行工程.sh",
+    "source": null
+  },
+  {
+    "title": "代码清单3-1: Java 风格的变量声明",
+    "lang": "java",
+    "chapter_file": "chapter-003.md",
+    "line": 23,
+    "extracted_file": "src\\代码清单3-1_ Java 风格的变量声明.java",
+    "source": null
+  },
+  {
+    "title": "代码清单3-2: 等价的 Kotlin 声明",
+    "lang": "kotlin",
+    "chapter_file": "chapter-003.md",
+    "line": 34,
+    "extracted_file": "src\\代码清单3-2_ 等价的 Kotlin 声明.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单3-3: VariablesDemo.kt 完整源码",
+    "lang": "kotlin",
+    "chapter_file": "chapter-003.md",
+    "line": 51,
+    "extracted_file": "src\\代码清单3-3_ VariablesDemo.kt 完整源码.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单3-5: StringTemplateDemo.kt 完整源码",
+    "lang": "kotlin",
+    "chapter_file": "chapter-003.md",
+    "line": 149,
+    "extracted_file": "src\\代码清单3-5_ StringTemplateDemo.kt 完整源码.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单4-1: NpeElimination.kt 改造前形态（!! 写法的崩溃复现）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-004.md",
+    "line": 23,
+    "extracted_file": "src\\代码清单4-1_ NpeElimination.kt 改造前形态（!! 写法的崩溃复现）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单4-3: 可空与非空在编译器的差别对待",
+    "lang": "kotlin",
+    "chapter_file": "chapter-004.md",
+    "line": 82,
+    "extracted_file": "src\\代码清单4-3_ 可空与非空在编译器的差别对待.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单4-4: NullSafetyDemo.kt 完整源码",
+    "lang": "kotlin",
+    "chapter_file": "chapter-004.md",
+    "line": 110,
+    "extracted_file": "src\\代码清单4-4_ NullSafetyDemo.kt 完整源码.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单4-5: !! 的三种替代写法对照",
+    "lang": "kotlin",
+    "chapter_file": "chapter-004.md",
+    "line": 162,
+    "extracted_file": "src\\代码清单4-5_ !! 的三种替代写法对照.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单4-7: NpeElimination.kt 消除终版完整源码",
+    "lang": "kotlin",
+    "chapter_file": "chapter-004.md",
+    "line": 201,
+    "extracted_file": "src\\代码清单4-7_ NpeElimination.kt 消除终版完整源码.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单5-1: ShippingFeeLegacy.kt 改造前的运费计算（三层嵌套）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-005.md",
+    "line": 25,
+    "extracted_file": "src\\代码清单5-1_ ShippingFeeLegacy.kt 改造前的运费计算（三层嵌套）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单5-3: WhenForms.kt when 的四种形态一屏看完",
+    "lang": "kotlin",
+    "chapter_file": "chapter-005.md",
+    "line": 120,
+    "extracted_file": "src\\代码清单5-3_ WhenForms.kt when 的四种形态一屏看完.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单5-5: 语句式与表达式式对照示意片段（非独立运行文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-005.md",
+    "line": 205,
+    "extracted_file": "src\\代码清单5-5_ 语句式与表达式式对照示意片段（非独立运行文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单5-6: IfElseRefactor.kt when 压平后的运费计算",
+    "lang": "kotlin",
+    "chapter_file": "chapter-005.md",
+    "line": 259,
+    "extracted_file": "src\\代码清单5-6_ IfElseRefactor.kt when 压平后的运费计算.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单6-1: 三时机通知的反面写法（示意片段，非独立运行文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-006.md",
+    "line": 25,
+    "extracted_file": "src\\代码清单6-1_ 三时机通知的反面写法（示意片段，非独立运行文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单6-2: Java 重载链对照（示意片段，非仓内文件）",
+    "lang": "java",
+    "chapter_file": "chapter-006.md",
+    "line": 69,
+    "extracted_file": "src\\代码清单6-2_ Java 重载链对照（示意片段，非仓内文件）.java",
+    "source": null
+  },
+  {
+    "title": "代码清单6-3: FunctionForms.kt 默认参数、函数类型与高阶函数入门（教学片段，非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-006.md",
+    "line": 93,
+    "extracted_file": "src\\代码清单6-3_ FunctionForms.kt 默认参数、函数类型与高阶函数入门（教学片段，非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单6-5: CallbackDemo.kt 接收回调的支付处理实战（教学片段，非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-006.md",
+    "line": 208,
+    "extracted_file": "src\\代码清单6-5_ CallbackDemo.kt 接收回调的支付处理实战（教学片段，非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单7-1: 订单统计的 for 循环版（示意片段，非独立运行文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-007.md",
+    "line": 25,
+    "extracted_file": "src\\代码清单7-1_ 订单统计的 for 循环版（示意片段，非独立运行文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单7-2: DataPipeline.kt 集合操作符完整管线",
+    "lang": "kotlin",
+    "chapter_file": "chapter-007.md",
+    "line": 57,
+    "extracted_file": "src\\代码清单7-2_ DataPipeline.kt 集合操作符完整管线.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单7-4: SequenceCompare.kt 急切与惰性的执行次序验证",
+    "lang": "kotlin",
+    "chapter_file": "chapter-007.md",
+    "line": 183,
+    "extracted_file": "src\\代码清单7-4_ SequenceCompare.kt 急切与惰性的执行次序验证.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单8-1: 创建 todo-cli 工程目录并生成包装器",
+    "lang": "bash",
+    "chapter_file": "chapter-008.md",
+    "line": 64,
+    "extracted_file": "src\\代码清单8-1_ 创建 todo-cli 工程目录并生成包装器.sh",
+    "source": null
+  },
+  {
+    "title": "代码清单8-2: todo-cli 的 build.gradle.kts（教学片段，非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-008.md",
+    "line": 77,
+    "extracted_file": "src\\代码清单8-2_ todo-cli 的 build.gradle.kts（教学片段，非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单8-3: TodoStore.kt 数据层（教学片段，非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-008.md",
+    "line": 112,
+    "extracted_file": "src\\代码清单8-3_ TodoStore.kt 数据层（教学片段，非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单8-4: TodoCli.kt 命令层（教学片段，非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-008.md",
+    "line": 195,
+    "extracted_file": "src\\代码清单8-4_ TodoCli.kt 命令层（教学片段，非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单9-1: Progress 的 Java 写法（教学片段）",
+    "lang": "java",
+    "chapter_file": "chapter-009.md",
+    "line": 25,
+    "extracted_file": "src\\代码清单9-1_ Progress 的 Java 写法（教学片段）.java",
+    "source": null
+  },
+  {
+    "title": "代码清单9-2: 等价的 Kotlin 写法（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-009.md",
+    "line": 51,
+    "extracted_file": "src\\代码清单9-2_ 等价的 Kotlin 写法（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单9-3: 次构造必须委托主构造（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-009.md",
+    "line": 71,
+    "extracted_file": "src\\代码清单9-3_ 次构造必须委托主构造（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单9-4: Budget.kt 主构造与 init 块的封装设计（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-009.md",
+    "line": 86,
+    "extracted_file": "src\\代码清单9-4_ Budget.kt 主构造与 init 块的封装设计（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单9-6: AccessBox.kt 四种可见性修饰符对照（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-009.md",
+    "line": 134,
+    "extracted_file": "src\\代码清单9-6_ AccessBox.kt 四种可见性修饰符对照（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单10-1: 默认 final 下覆写直接编译失败（教学片段——非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-010.md",
+    "line": 23,
+    "extracted_file": "src\\代码清单10-1_ 默认 final 下覆写直接编译失败（教学片段——非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单10-3: open 解除版（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-010.md",
+    "line": 51,
+    "extracted_file": "src\\代码清单10-3_ open 解除版（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单10-5: protected 家族内部可见（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-010.md",
+    "line": 85,
+    "extracted_file": "src\\代码清单10-5_ protected 家族内部可见（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单10-7: 接口默认实现：白拿与覆写两条路径（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-010.md",
+    "line": 135,
+    "extracted_file": "src\\代码清单10-7_ 接口默认实现：白拿与覆写两条路径（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单10-8: 抽象类对照：abstract 欠条与具体成员（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-010.md",
+    "line": 160,
+    "extracted_file": "src\\代码清单10-8_ 抽象类对照：abstract 欠条与具体成员（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单11-1: 布尔标志位失控反例（教学片段——非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-011.md",
+    "line": 23,
+    "extracted_file": "src\\代码清单11-1_ 布尔标志位失控反例（教学片段——非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单11-3: data class 自动生成成员演示（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-011.md",
+    "line": 65,
+    "extracted_file": "src\\代码清单11-3_ data class 自动生成成员演示（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单11-5: 密封类订单状态机（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-011.md",
+    "line": 108,
+    "extracted_file": "src\\代码清单11-5_ 密封类订单状态机（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单11-7: when 漏分支反例（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-011.md",
+    "line": 160,
+    "extracted_file": "src\\代码清单11-7_ when 漏分支反例（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单11-9: object 声明与 companion object（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-011.md",
+    "line": 192,
+    "extracted_file": "src\\代码清单11-9_ object 声明与 companion object（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单12-1: String 业务扩展：扩展函数与扩展属性（教学片段——非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-012.md",
+    "line": 33,
+    "extracted_file": "src\\代码清单12-1_ String 业务扩展：扩展函数与扩展属性（教学片段——非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单12-3: 静态解析演示：同名扩展与成员胜出（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-012.md",
+    "line": 70,
+    "extracted_file": "src\\代码清单12-3_ 静态解析演示：同名扩展与成员胜出（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单12-5: 扩展两条红线反例（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-012.md",
+    "line": 129,
+    "extracted_file": "src\\代码清单12-5_ 扩展两条红线反例（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单13-1: Java 通配符签名照抄进 Kotlin（反例，教学片段——非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-013.md",
+    "line": 23,
+    "extracted_file": "src\\代码清单13-1_ Java 通配符签名照抄进 Kotlin（反例，教学片段——非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单13-3: 泛型函数与上界约束（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-013.md",
+    "line": 51,
+    "extracted_file": "src\\代码清单13-3_ 泛型函数与上界约束（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单13-4: 自设计生产者与消费者（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-013.md",
+    "line": 79,
+    "extracted_file": "src\\代码清单13-4_ 自设计生产者与消费者（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单13-6: reified 配合 inline 的类型判断与类名获取（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-013.md",
+    "line": 141,
+    "extracted_file": "src\\代码清单13-6_ reified 配合 inline 的类型判断与类名获取（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单13-8: 擦除反例：去掉 inline 与 reified（教学片段——非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-013.md",
+    "line": 177,
+    "extracted_file": "src\\代码清单13-8_ 擦除反例：去掉 inline 与 reified（教学片段——非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单13-10: by lazy 消除手写缓存样板（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-013.md",
+    "line": 206,
+    "extracted_file": "src\\代码清单13-10_ by lazy 消除手写缓存样板（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单14-1: operator plus 与 get（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-014.md",
+    "line": 25,
+    "extracted_file": "src\\代码清单14-1_ operator plus 与 get（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单14-3: 约定外名字的反例（反例，教学片段——非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-014.md",
+    "line": 65,
+    "extracted_file": "src\\代码清单14-3_ 约定外名字的反例（反例，教学片段——非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单14-5: infix 成员函数与中缀调用（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-014.md",
+    "line": 90,
+    "extracted_file": "src\\代码清单14-5_ infix 成员函数与中缀调用（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单14-7: 双参数中缀反例（反例，教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-014.md",
+    "line": 126,
+    "extracted_file": "src\\代码清单14-7_ 双参数中缀反例（反例，教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单14-9: 同一段业务的五种作用域函数写法（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-014.md",
+    "line": 159,
+    "extracted_file": "src\\代码清单14-9_ 同一段业务的五种作用域函数写法（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单14-11: 演练例改写前：临时变量满天飞（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-014.md",
+    "line": 232,
+    "extracted_file": "src\\代码清单14-11_ 演练例改写前：临时变量满天飞（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单14-12: 演练例改写后：三问定一个（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-014.md",
+    "line": 252,
+    "extracted_file": "src\\代码清单14-12_ 演练例改写后：三问定一个（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单15-1: 领域模型骨架：Book 与 LoanState（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-015.md",
+    "line": 42,
+    "extracted_file": "src\\代码清单15-1_ 领域模型骨架：Book 与 LoanState（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单15-2: 状态流转收口：checkout/giveBack/reportLost（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-015.md",
+    "line": 81,
+    "extracted_file": "src\\代码清单15-2_ 状态流转收口：checkout_giveBack_reportLost（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单15-3: 逾期计算扩展：扩展属性与扩展函数（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-015.md",
+    "line": 125,
+    "extracted_file": "src\\代码清单15-3_ 逾期计算扩展：扩展属性与扩展函数（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单15-4: CopyTest：状态流转与值语义的测试（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-015.md",
+    "line": 163,
+    "extracted_file": "src\\代码清单15-4_ CopyTest：状态流转与值语义的测试（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单15-5: OverdueTest 与全流程测试（教学片段，import 行从略）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-015.md",
+    "line": 228,
+    "extracted_file": "src\\代码清单15-5_ OverdueTest 与全流程测试（教学片段，import 行从略）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单15-6: 未收口的第一版 overdueDays（反例，教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-015.md",
+    "line": 286,
+    "extracted_file": "src\\代码清单15-6_ 未收口的第一版 overdueDays（反例，教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单15-8: 复绿：收口一笔（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-015.md",
+    "line": 312,
+    "extracted_file": "src\\代码清单15-8_ 复绿：收口一笔（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单16-1: 阻塞拖死线程池复现：占坑任务与瞬时任务（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-016.md",
+    "line": 25,
+    "extracted_file": "src\\代码清单16-1_ 阻塞拖死线程池复现：占坑任务与瞬时任务（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单16-3: 第一个挂起函数 slowFetch 与线程释放观察（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-016.md",
+    "line": 96,
+    "extracted_file": "src\\代码清单16-3_ 第一个挂起函数 slowFetch 与线程释放观察（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单16-5: 单线程跑起十万个协程（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-016.md",
+    "line": 132,
+    "extracted_file": "src\\代码清单16-5_ 单线程跑起十万个协程（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单16-7: 一字之差的两个等待与判据读数（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-016.md",
+    "line": 188,
+    "extracted_file": "src\\代码清单16-7_ 一字之差的两个等待与判据读数（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单16-9: 编译反例：普通函数直调 delay（修复前源码）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-016.md",
+    "line": 226,
+    "extracted_file": "src\\代码清单16-9_ 编译反例：普通函数直调 delay（修复前源码）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单17-1: GlobalScope 泄漏复盘：业务退场，协程还在 tick（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-017.md",
+    "line": 25,
+    "extracted_file": "src\\代码清单17-1_ GlobalScope 泄漏复盘：业务退场，协程还在 tick（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单17-3: 父子层级取消联动：cancel 一次，整树收工（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-017.md",
+    "line": 73,
+    "extracted_file": "src\\代码清单17-3_ 父子层级取消联动：cancel 一次，整树收工（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单17-5: 同一场活的两版写法：async 取值，launch 干活（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-017.md",
+    "line": 118,
+    "extracted_file": "src\\代码清单17-5_ 同一场活的两版写法：async 取值，launch 干活（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单17-7: 协作式取消正例与裸循环对照（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-017.md",
+    "line": 159,
+    "extracted_file": "src\\代码清单17-7_ 协作式取消正例与裸循环对照（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单17-9: 异常边界三对照：调用点、根作用域、await 处（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-017.md",
+    "line": 209,
+    "extracted_file": "src\\代码清单17-9_ 异常边界三对照：调用点、根作用域、await 处（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单18-1: 界面实时链路：仓库写值，界面即收（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-018.md",
+    "line": 23,
+    "extracted_file": "src\\代码清单18-1_ 界面实时链路：仓库写值，界面即收（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单18-3: 冷热对照：冷流上游跑两遍，热流上游一份共享（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-018.md",
+    "line": 65,
+    "extracted_file": "src\\代码清单18-3_ 冷热对照：冷流上游跑两遍，热流上游一份共享（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单18-5: StateFlow 三性质：即收当前值、相等值去重、新值即推（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-018.md",
+    "line": 127,
+    "extracted_file": "src\\代码清单18-5_ StateFlow 三性质：即收当前值、相等值去重、新值即推（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单18-7: SharedFlow：replay=2 的重放与 replay=0 的不补发（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-018.md",
+    "line": 161,
+    "extracted_file": "src\\代码清单18-7_ SharedFlow：replay=2 的重放与 replay=0 的不补发（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单18-9: 搜索建议的订阅链：filter → map → debounce（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-018.md",
+    "line": 203,
+    "extracted_file": "src\\代码清单18-9_ 搜索建议的订阅链：filter → map → debounce（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单18-11: 选型决策表逐行演练：三个场景各跑一段（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-018.md",
+    "line": 269,
+    "extracted_file": "src\\代码清单18-11_ 选型决策表逐行演练：三个场景各跑一段（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单19-2: Java 存量类 LegacyUserStore（教学片段）",
+    "lang": "java",
+    "chapter_file": "chapter-019.md",
+    "line": 50,
+    "extracted_file": "src\\代码清单19-2_ Java 存量类 LegacyUserStore（教学片段）.java",
+    "source": null
+  },
+  {
+    "title": "代码清单19-3: Kotlin 调 Java：属性语法直访 getter/setter",
+    "lang": "kotlin",
+    "chapter_file": "chapter-019.md",
+    "line": 86,
+    "extracted_file": "src\\代码清单19-3_ Kotlin 调 Java：属性语法直访 getter_setter.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单19-4: Kotlin 侧 UserRepo（属性与函数）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-019.md",
+    "line": 97,
+    "extracted_file": "src\\代码清单19-4_ Kotlin 侧 UserRepo（属性与函数）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单19-5: Java 调用点：属性即 get/set 方法对",
+    "lang": "java",
+    "chapter_file": "chapter-019.md",
+    "line": 110,
+    "extracted_file": "src\\代码清单19-5_ Java 调用点：属性即 get_set 方法对.java",
+    "source": null
+  },
+  {
+    "title": "代码清单19-6: 平台类型三处置对照（p09DrillDemo）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-019.md",
+    "line": 133,
+    "extracted_file": "src\\代码清单19-6_ 平台类型三处置对照（p09DrillDemo）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单19-7: 边界收口的包装函数",
+    "lang": "kotlin",
+    "chapter_file": "chapter-019.md",
+    "line": 148,
+    "extracted_file": "src\\代码清单19-7_ 边界收口的包装函数.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单19-9: @JvmStatic 两态对照（Kotlin 侧）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-019.md",
+    "line": 179,
+    "extracted_file": "src\\代码清单19-9_ @JvmStatic 两态对照（Kotlin 侧）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单19-10: @JvmStatic 两态对照（Java 调用点）",
+    "lang": "java",
+    "chapter_file": "chapter-019.md",
+    "line": 201,
+    "extracted_file": "src\\代码清单19-10_ @JvmStatic 两态对照（Java 调用点）.java",
+    "source": null
+  },
+  {
+    "title": "代码清单19-11: @JvmOverloads 生成重载链（Kotlin 侧）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-019.md",
+    "line": 213,
+    "extracted_file": "src\\代码清单19-11_ @JvmOverloads 生成重载链（Kotlin 侧）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单19-12: 重载链上的三档调用（Java 调用点）",
+    "lang": "java",
+    "chapter_file": "chapter-019.md",
+    "line": 224,
+    "extracted_file": "src\\代码清单19-12_ 重载链上的三档调用（Java 调用点）.java",
+    "source": null
+  },
+  {
+    "title": "代码清单19-13: @JvmField 暴露字段（Kotlin 侧）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-019.md",
+    "line": 238,
+    "extracted_file": "src\\代码清单19-13_ @JvmField 暴露字段（Kotlin 侧）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单19-14: 字段直读（Java 调用点）",
+    "lang": "java",
+    "chapter_file": "chapter-019.md",
+    "line": 246,
+    "extracted_file": "src\\代码清单19-14_ 字段直读（Java 调用点）.java",
+    "source": null
+  },
+  {
+    "title": "代码清单19-17: 迁移前的 LegacyInvoice",
+    "lang": "java",
+    "chapter_file": "chapter-019.md",
+    "line": 286,
+    "extracted_file": "src\\代码清单19-17_ 迁移前的 LegacyInvoice.java",
+    "source": null
+  },
+  {
+    "title": "代码清单19-18: 迁移后的 Invoice",
+    "lang": "kotlin",
+    "chapter_file": "chapter-019.md",
+    "line": 322,
+    "extracted_file": "src\\代码清单19-18_ 迁移后的 Invoice.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单20-1: 版本号七处漂移的单体工程现场（教学片段，非仓内文件）",
+    "lang": "kts",
+    "chapter_file": "chapter-020.md",
+    "line": 23,
+    "extracted_file": "src\\代码清单20-1_ 版本号七处漂移的单体工程现场（教学片段，非仓内文件）.txt",
+    "source": null
+  },
+  {
+    "title": "代码清单20-2: gradle/libs.versions.toml 收纳后的登记（实测工程真实文件）",
+    "lang": "toml",
+    "chapter_file": "chapter-020.md",
+    "line": 76,
+    "extracted_file": "src\\代码清单20-2_ gradle_libs.versions.toml 收纳后的登记（实测工程真实文件）.toml",
+    "source": null
+  },
+  {
+    "title": "代码清单20-3: 模块 build.gradle.kts 走 libs 引用依赖（实测工程真实文件，:core）",
+    "lang": "kts",
+    "chapter_file": "chapter-020.md",
+    "line": 98,
+    "extracted_file": "src\\代码清单20-3_ 模块 build.gradle.kts 走 libs 引用依赖（实测工程真实文件，_core）.txt",
+    "source": null
+  },
+  {
+    "title": "代码清单20-4: api 与 implementation 对照——改前（implementation 态）",
+    "lang": "kts",
+    "chapter_file": "chapter-020.md",
+    "line": 141,
+    "extracted_file": "src\\代码清单20-4_ api 与 implementation 对照——改前（implementation 态）.txt",
+    "source": null
+  },
+  {
+    "title": "代码清单20-5: api 与 implementation 对照——改后（java-library + api 态）",
+    "lang": "kts",
+    "chapter_file": "chapter-020.md",
+    "line": 153,
+    "extracted_file": "src\\代码清单20-5_ api 与 implementation 对照——改后（java-library + api 态）.txt",
+    "source": null
+  },
+  {
+    "title": "代码清单20-8: settings.gradle.kts 多模块划分（实测工程真实文件）",
+    "lang": "kts",
+    "chapter_file": "chapter-020.md",
+    "line": 213,
+    "extracted_file": "src\\代码清单20-8_ settings.gradle.kts 多模块划分（实测工程真实文件）.txt",
+    "source": null
+  },
+  {
+    "title": "代码清单21-1: 一行改动牵连三处调用点的现场（教学片段，非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-021.md",
+    "line": 27,
+    "extracted_file": "src\\代码清单21-1_ 一行改动牵连三处调用点的现场（教学片段，非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单21-2: OverdueFeeCalculator 与单元测试（仓内实测真实文件，主代码与测试合展）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-021.md",
+    "line": 53,
+    "extracted_file": "src\\代码清单21-2_ OverdueFeeCalculator 与单元测试（仓内实测真实文件，主代码与测试合展）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单21-3: OverdueFeeCalculatorTest（仓内实测真实文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-021.md",
+    "line": 82,
+    "extracted_file": "src\\代码清单21-3_ OverdueFeeCalculatorTest（仓内实测真实文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单21-4: OverdueFeeParameterizedTest 参数化测试（仓内实测真实文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-021.md",
+    "line": 131,
+    "extracted_file": "src\\代码清单21-4_ OverdueFeeParameterizedTest 参数化测试（仓内实测真实文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单21-5: 断言混装演示件（教学片段，实测回执后已删）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-021.md",
+    "line": 178,
+    "extracted_file": "src\\代码清单21-5_ 断言混装演示件（教学片段，实测回执后已删）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单21-6: quality-gate-demo 的 build.gradle.kts 四关接线（仓内实测真实文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-021.md",
+    "line": 203,
+    "extracted_file": "src\\代码清单21-6_ quality-gate-demo 的 build.gradle.kts 四关接线（仓内实测真实文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单22-1: hello-ktor 构建接线 build.gradle.kts（仓内实测文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-022.md",
+    "line": 48,
+    "extracted_file": "src\\代码清单22-1_ hello-ktor 构建接线 build.gradle.kts（仓内实测文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单22-2: gradle/libs.versions.toml（仓内实测文件）",
+    "lang": "toml",
+    "chapter_file": "chapter-022.md",
+    "line": 84,
+    "extracted_file": "src\\代码清单22-2_ gradle_libs.versions.toml（仓内实测文件）.toml",
+    "source": null
+  },
+  {
+    "title": "代码清单22-3: embeddedServer 直启入口（仓内实测文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-022.md",
+    "line": 107,
+    "extracted_file": "src\\代码清单22-3_ embeddedServer 直启入口（仓内实测文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单22-4: module() 里的两条文本路由（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-022.md",
+    "line": 121,
+    "extracted_file": "src\\代码清单22-4_ module() 里的两条文本路由（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单22-6: /api 嵌套分组与路径参数单条路由（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-022.md",
+    "line": 158,
+    "extracted_file": "src\\代码清单22-6_ _api 嵌套分组与路径参数单条路由（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单22-8: @Serializable 数据类与 ContentNegotiation 接线（节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-022.md",
+    "line": 208,
+    "extracted_file": "src\\代码清单22-8_ @Serializable 数据类与 ContentNegotiation 接线（节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单22-11: EngineMain 入口与构建接线（节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-022.md",
+    "line": 265,
+    "extracted_file": "src\\代码清单22-11_ EngineMain 入口与构建接线（节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单23-1: SQL 拼接演示 sqlConcatDemo（节选，仓内实测文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-023.md",
+    "line": 25,
+    "extracted_file": "src\\代码清单23-1_ SQL 拼接演示 sqlConcatDemo（节选，仓内实测文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单23-3: books 表对象声明 BooksTable.kt（仓内实测文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-023.md",
+    "line": 111,
+    "extracted_file": "src\\代码清单23-3_ books 表对象声明 BooksTable.kt（仓内实测文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单23-5: select 条件查询（节选，仓内实测文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-023.md",
+    "line": 150,
+    "extracted_file": "src\\代码清单23-5_ select 条件查询（节选，仓内实测文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单23-6: insert 写入（节选，仓内实测文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-023.md",
+    "line": 164,
+    "extracted_file": "src\\代码清单23-6_ insert 写入（节选，仓内实测文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单23-7: update/delete 变更（节选，仓内实测文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-023.md",
+    "line": 187,
+    "extracted_file": "src\\代码清单23-7_ update_delete 变更（节选，仓内实测文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单23-8: 事务边界对照 txDemo（节选，仓内实测文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-023.md",
+    "line": 213,
+    "extracted_file": "src\\代码清单23-8_ 事务边界对照 txDemo（节选，仓内实测文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单23-9: 集成测试 BooksCrudTest.kt（节选，仓内实测文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-023.md",
+    "line": 267,
+    "extracted_file": "src\\代码清单23-9_ 集成测试 BooksCrudTest.kt（节选，仓内实测文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单24-2: 双令牌签发 TokenService（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-024.md",
+    "line": 66,
+    "extracted_file": "src\\代码清单24-2_ 双令牌签发 TokenService（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单24-3: 令牌校验（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-024.md",
+    "line": 99,
+    "extracted_file": "src\\代码清单24-3_ 令牌校验（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单24-5: 认证插件接线（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-024.md",
+    "line": 158,
+    "extracted_file": "src\\代码清单24-5_ 认证插件接线（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单24-7: StatusPages 统一异常处理（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-024.md",
+    "line": 218,
+    "extracted_file": "src\\代码清单24-7_ StatusPages 统一异常处理（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单24-9: 认证链路结构化日志（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-024.md",
+    "line": 261,
+    "extracted_file": "src\\代码清单24-9_ 认证链路结构化日志（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单25-2: 三层装配入口（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-025.md",
+    "line": 73,
+    "extracted_file": "src\\代码清单25-2_ 三层装配入口（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单25-3: 服务层骨架（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-025.md",
+    "line": 96,
+    "extracted_file": "src\\代码清单25-3_ 服务层骨架（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单25-4: async 取值与 launch 副作用对照（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-025.md",
+    "line": 120,
+    "extracted_file": "src\\代码清单25-4_ async 取值与 launch 副作用对照（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单25-5: 路由层接线（仓内实测文件，节选）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-025.md",
+    "line": 152,
+    "extracted_file": "src\\代码清单25-5_ 路由层接线（仓内实测文件，节选）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单26-1: 新建任务的 Ktor 写法（教学片段，非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-026.md",
+    "line": 90,
+    "extracted_file": "src\\代码清单26-1_ 新建任务的 Ktor 写法（教学片段，非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单26-2: 同一段业务的 Spring Boot 4 写法（教学片段）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-026.md",
+    "line": 109,
+    "extracted_file": "src\\代码清单26-2_ 同一段业务的 Spring Boot 4 写法（教学片段）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单27-1: expect/actual 最小示意（教学片段，非仓内文件）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-027.md",
+    "line": 28,
+    "extracted_file": "src\\代码清单27-1_ expect_actual 最小示意（教学片段，非仓内文件）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单33-1: 租户生命周期三个入口（tenant-isolation-lab 实测工程）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-033.md",
+    "line": 23,
+    "extracted_file": "src\\代码清单33-1_ 租户生命周期三个入口（tenant-isolation-lab 实测工程）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单33-2: 隔离查询入口，租户条件是谓词的固定组成部分（tenant-isolation-lab 实测工程）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-033.md",
+    "line": 77,
+    "extracted_file": "src\\代码清单33-2_ 隔离查询入口，租户条件是谓词的固定组成部分（tenant-isolation-lab 实测工程）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单33-3: 换租户入口，两道门槛过后才换发上下文（tenant-isolation-lab 实测工程）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-033.md",
+    "line": 130,
+    "extracted_file": "src\\代码清单33-3_ 换租户入口，两道门槛过后才换发上下文（tenant-isolation-lab 实测工程）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单34-1: 双令牌签发与换新（identity-auth-rbac-lab 实测工程）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-034.md",
+    "line": 21,
+    "extracted_file": "src\\代码清单34-1_ 双令牌签发与换新（identity-auth-rbac-lab 实测工程）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单34-2: 一次性授权码签发与换发（identity-auth-rbac-lab 实测工程）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-034.md",
+    "line": 76,
+    "extracted_file": "src\\代码清单34-2_ 一次性授权码签发与换发（identity-auth-rbac-lab 实测工程）.kt",
+    "source": null
+  },
+  {
+    "title": "代码清单34-3: 矩阵装配与权限闸（identity-auth-rbac-lab 实测工程）",
+    "lang": "kotlin",
+    "chapter_file": "chapter-034.md",
+    "line": 107,
+    "extracted_file": "src\\代码清单34-3_ 矩阵装配与权限闸（identity-auth-rbac-lab 实测工程）.kt",
+    "source": null
+  }
+]

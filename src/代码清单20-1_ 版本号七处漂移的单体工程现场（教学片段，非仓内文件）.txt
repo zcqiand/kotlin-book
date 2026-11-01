@@ -1,0 +1,42 @@
+// 一个滚了三年的单体工程 build.gradle.kts: 依赖还是那几个依赖,
+// slf4j 的版本号却已经在文件里漂出了七处, 没有一处敢保证是"当前版本"。
+
+// 漂移点 1: 构建脚本自带的 classpath 依赖, 项目初始化时抄的旧模板, 停在 1.7.36
+buildscript {
+    dependencies {
+        classpath("org.slf4j:slf4j-api:1.7.36")
+    }
+}
+
+plugins {
+    kotlin("jvm") version "2.4.21"
+    application
+}
+
+// 漂移点 2: 有人想统一版本, 声明了变量, 但只顾了自己那一行, 停在 2.0.5
+val slf4jVersion = "2.0.5"
+
+repositories { mavenCentral() }
+
+dependencies {
+    // 漂移点 3: 主依赖, 实际生效的编译入口, 停在 1.7.36
+    implementation("org.slf4j:slf4j-api:1.7.36")
+
+    // 漂移点 4: 测试补的实现绑定, 另一个人加的, 裸写 2.0.9
+    testImplementation("org.slf4j:slf4j-simple:2.0.9")
+
+    // 漂移点 5: 有人升级时只改了注释, 代码没跟上, 注释说 2.0.16 依赖却是旧的
+    // 升级记录: 2024-XX 已升到 2.0.16
+    runtimeOnly("org.slf4j:slf4j-ext:${slf4jVersion}")   // 用的还是漂移点 2 的 2.0.5
+
+    // 漂移点 6: 集成测试配置单独又写了一份, 裸写 2.0.16
+    "integrationTestImplementation"("org.slf4j:slf4j-api:2.0.16")
+}
+
+// 漂移点 7: 约束块里再锁一份, 意图是"钉住传递依赖", 实际钉的是又一个版本 2.0.0
+dependencies {
+    constraints {
+        implementation("org.slf4j:slf4j-api:2.0.0")
+    }
+}
+// 七处五个版本, 哪个说了算? 谁也说不清。下一清单的版本目录就是解药。
