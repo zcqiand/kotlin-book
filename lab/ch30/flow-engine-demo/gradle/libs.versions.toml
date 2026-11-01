@@ -1,0 +1,10 @@
+# 版本目录：全工程版本唯一事实源（version-lock 口径：Kotlin 2.4.21，沿 ch29 同款）。
+# 本工程零第三方依赖：纯 Kotlin 标准库 + kotlin-test 测试框架，无数据库。
+[versions]
+kotlin = "2.4.21"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
