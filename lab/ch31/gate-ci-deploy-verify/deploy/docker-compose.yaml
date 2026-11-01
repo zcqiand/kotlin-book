@@ -1,0 +1,30 @@
+services:
+  # PG 16 容器化本地方案（教学件；本机 Docker 缺位时见 VERIFY-CHECKLIST.md 附录的
+  # 便携 PG 16 等效路线）。容器名/库名/用户名一律带 _ch31_verify 隔离后缀；
+  # 端口绑 127.0.0.1 高位口 15439，严禁暴露到外网，严禁写共享库。
+  pg_ch31_verify:
+    image: postgres:16
+    container_name: pg_ch31_verify
+    environment:
+      POSTGRES_DB: lab_ch31_verify
+      POSTGRES_USER: lab_ch31_verify
+      POSTGRES_PASSWORD: ch31_verify
+    ports:
+      - "127.0.0.1:15439:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lab_ch31_verify -d lab_ch31_verify"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # 应用侧服务定义（教学件，四级门控过后的部署形态示例）。本 lab 未产 Dockerfile，
+  # image 字段留给真实镜像名；起不起真实应用容器以耗时为准，PG 容器必须真起真连。
+  app_ch31_verify:
+    image: gate-ci-deploy-verify:latest
+    depends_on:
+      pg_ch31_verify:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://lab_ch31_verify:ch31_verify@pg_ch31_verify:5432/lab_ch31_verify
+    ports:
+      - "127.0.0.1:15440:15440"
