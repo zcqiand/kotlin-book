@@ -1,0 +1,14 @@
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+
+> Task :run
+【Kotlin open 哲学】（默认介绍模板）
+▶ open 哲学公开课（视频专属介绍）
+资产#7，体积=6075KB
+
+BUILD SUCCESSFUL in 6s
+2 actionable tasks: 1 executed, 1 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.8.1/userguide/configuration_cache_enabling.html

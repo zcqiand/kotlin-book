@@ -12,6 +12,8 @@
 
 | 章 | 工程 | 内容 |
 |----|------|------|
+| ch08 | `lab/ch08/todo-cli/` | 卷一实战：命令行待办工具（工程骨架/变量与类型/空安全/when/函数与集合操作）+运行回执 22 件逐字（正例 exit 0/反例编译失败）+compare_receipts.py 对账脚本 |
+| ch10 | `lab/ch10/open-philosophy/` | open 修饰符与继承哲学演示（默认 final vs open 对照+broken/ 反例现场+run_gradle.py 验证跑法+回执逐字） |
 | ch11 | `lab/ch11/trio-demo/` | data class / sealed class 状态机 / object 三件套演示 + when 漏分支编译失败回执 |
 | ch12 | `lab/ch12/ext-demo/` | String 业务扩展 + 静态解析演示 + 局限反例（私有访问/open 修饰编译失败回执 + shadow 告警实捕） |
 | ch13 | `lab/ch13/generics-delegate-demo/` | 泛型/型变/reified/委托四示例 + Java 泛型编不过现场（BrokenForward 雪崩）+ 擦除反例（PlainOfType erased type 回执） |

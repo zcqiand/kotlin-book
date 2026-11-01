@@ -1,0 +1,27 @@
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+
+> Task :compileKotlin FAILED
+
+[Incubating] Problems report is available at: file:///D:/qiand-life/1-projects/xr-knowledge-suite/output/xr-know-020/chapters/_work/lab-ch10/open-philosophy/build/reports/problems/problems-report.html
+1 actionable task: 1 executed
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8
+e: file:///D:/qiand-life/1-projects/xr-knowledge-suite/output/xr-know-020/chapters/_work/lab-ch10/open-philosophy/src/main/kotlin/demo/ProtectFromOutside.kt:7:13 Cannot access 'fun audit(event: String): Unit': it is protected in 'demo.AuditedAccount'.
+e: file:///D:/qiand-life/1-projects/xr-knowledge-suite/output/xr-know-020/chapters/_work/lab-ch10/open-philosophy/src/main/kotlin/demo/ProtectFromOutside.kt:8:21 Cannot access 'val auditLog: MutableList<String>': it is protected in 'demo.AuditedAccount'.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileKotlin' (registered by plugin 'org.jetbrains.kotlin.jvm').
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Kotlin compiler: INVISIBLE_REFERENCE
+       Kotlin compiler error
+         Cannot access 'fun audit(event: String): Unit': it is protected in 'demo.AuditedAccount'.
+         Location: D:/qiand-life/1-projects/xr-knowledge-suite/output/xr-know-020/chapters/_work/lab-ch10/open-philosophy/src/main/kotlin/demo/ProtectFromOutside.kt:7
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 6s
